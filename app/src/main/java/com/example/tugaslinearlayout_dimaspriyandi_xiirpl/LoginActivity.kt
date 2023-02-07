@@ -16,10 +16,10 @@ class LoginActivity : AppCompatActivity() {
 
         val email:TextInputEditText = findViewById(R.id.email)
         val password: TextInputEditText = findViewById(R.id.password)
-        val button:Button  = findViewById(R.id.password)
+        val button:Button  = findViewById(R.id.btnLogin)
         val intent :Intent = Intent(this,ProfileActivity::class.java)
         button.setOnClickListener {
-            if(email.text.toString().equals("admin@admin") && password.text.toString().equals("admin") ){
+            if(email.text.toString().equals("admin@gmail.com") && password.text.toString().equals("admin") ){
                 intent.putExtra("Name","Dimas")
                 intent.putExtra("Nis","12345")
                 intent.putExtra("Email Address",email.text.toString())
